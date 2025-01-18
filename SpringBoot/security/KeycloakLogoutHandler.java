@@ -15,14 +15,9 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @Component
 public class KeycloakLogoutHandler implements LogoutHandler {
-//    public class KeycloakLogoutHandler  {
 
     private static final Logger logger = LoggerFactory.getLogger(KeycloakLogoutHandler.class);
     private RestTemplate restTemplate;
-
-//    public KeycloakLogoutHandler(RestTemplate restTemplate) {
-//        this.restTemplate = restTemplate;
-//    }
 
     @Override
     public void logout(HttpServletRequest request, HttpServletResponse response,
